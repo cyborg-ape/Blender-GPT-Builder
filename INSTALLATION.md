@@ -8,6 +8,7 @@ Blender's 3D Viewport.
 - Blender 4.0 or newer
 - An internet connection
 - An OpenAI API key with access to a compatible GPT model
+-Works across windows and linux machines, have not tried on mac os should work
 
 OpenAI API usage is associated with your OpenAI API account. Keep your API key
 private and never include it in a `.blend` file, screenshot, or shared ZIP.
@@ -19,8 +20,14 @@ private and never include it in a `.blend` file, screenshot, or shared ZIP.
 3. Open Blender.
 4. Go to **Edit > Preferences**.
 5. Open **Add-ons**.
-6. Click **Install...**.
-7. Select `blender_gpt_builder-1.0.8.zip`.
+6. Install the ZIP using the option for your Blender version:
+   - **Blender 5.0:** Click the **down arrow in the top-right corner**, then
+     click **Install from Disk**.
+   - **Earlier Blender versions:** Click **Install...**. If that button is not
+     visible, open the menu in the top-right corner and choose
+     **Install from Disk**.
+7. In the file browser, select `blender_gpt_builder-1.0.8.zip`, then confirm the
+   installation. Do not extract the ZIP first.
 8. Search for **Blender GPT Builder** and enable its checkbox if Blender does
    not enable it automatically.
 9. Close Preferences. Blender normally saves this setting automatically; if
@@ -66,17 +73,7 @@ access to Blender and to the files and permissions available to the Blender
 process. Save your `.blend` file first, keep backups, and use Generate only with
 prompts and files you trust.
 
-## Update the add-on
 
-1. Download the newer `blender_gpt_builder-<version>.zip` file.
-2. Open **Edit > Preferences > Add-ons**.
-3. Disable and remove the existing **Blender GPT Builder** installation.
-4. Install the new ZIP using the installation steps above.
-5. Re-enable the add-on and click **Test** under **Connection**.
-
-Restart Blender if the old version number remains visible after updating.
-
-## Troubleshooting
 
 ### The GPT Builder tab is missing
 
@@ -107,4 +104,3 @@ Restart Blender if the old version number remains visible after updating.
 
 Open the add-on preferences and click **Remove**. This deletes the key from the
 add-on's local settings file.
-
